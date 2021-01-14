@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "Taher",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "express": "^4.17.1",
     "express-sanitizer": "^1.0.5",
     "method-override": "^3.0.0",
+    "mongodb": "^3.6.3",
     "mongoose": "^5.9.1"
   }
 }
