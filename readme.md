@@ -15,5 +15,7 @@
 
   * It includes the features of ADD,UPDATE and DELETE using RESTful routes
 
-  * Live Version - Coming Soon .........
+  * Contanarised using Docker and hosted on Google Cloud Run
+
+  * Live Version - https://blog-app-lgajagseeq-uc.a.run.app/blogs
 
