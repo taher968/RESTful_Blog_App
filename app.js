@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 //App Config
-var url = process.env.DATABASE_URL || "mongodb://localhost:27017/Blog"; 
+const url = "mongodb+srv://taher_user:taher968@cluster0.ekk4x.mongodb.net/Blog?retryWrites=true&w=majority";
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify:false })
     .then(() => console.log(`Connection Successful to ${url}` ))
     .catch(err => console.log(err));
@@ -113,7 +113,8 @@ app.delete("/blogs/:id",(req,res) => {
     })
 })
 
+const port = process.env.PORT || 3000;
 
-app.listen(3000,() => {
+app.listen(port,() => {
     console.log("Server is listening");
 })
